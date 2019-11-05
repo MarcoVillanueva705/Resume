@@ -1,0 +1,59 @@
+:root {
+  --primary: #cc4800;
+  --secondary: #2a1a5e;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 16pt;
+}
+
+h1 {
+  color: var(--primary);
+}
+
+header, footer
+  {
+  min-height: 10vh; 
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  border-bottom: double;
+  display: inline;
+}
+
+header h1:hover {
+color: var(--secondary);
+cursor: pointer;
+}
+
+main {
+  flex-grow: 1;
+}
+
+main h1 {
+  margin: 0;
+}
+
+#skills ul{
+  column-count: 2;
+}
+
+.job p {
+  margin: 0;
+}
+
+.job ul {
+  margin: 0.5em 0;
+}
+
+
+.job p::first-child, .eudcation p:first-child{
+  margin-top: 1em;
+}
